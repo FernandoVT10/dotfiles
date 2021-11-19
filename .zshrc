@@ -124,7 +124,12 @@ compileAndRunC() {
 
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
-$HOME/ColorScripts/ghosts
+# Run a random color script each time that you run a terminal
+colorscripts_folder="$HOME/ColorScripts"
+if [ -d $colorscripts_folder ]
+then
+  bash "$colorscripts_folder/$(ls $colorscripts_folder | sort -R | tail -n 1)"
+fi
 
 # A neccessary configuration to play games
 export MESA_GL_VERSION_OVERRIDE=4.4
