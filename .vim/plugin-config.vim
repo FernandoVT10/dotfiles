@@ -60,7 +60,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = "left"
 
 " Testing configuration
-let test#strategy = "dispatch"
+let test#strategy = "vimux"
 
 " markdown preview
 let g:mkdp_browser = 'google-chrome'

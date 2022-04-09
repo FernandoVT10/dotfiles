@@ -42,12 +42,15 @@ Plug 'junegunn/fzf.vim'
 " Other
 Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'preservim/vimux'
 
 " Markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'sindrets/diffview.nvim'
 
 " Icons
 Plug 'ryanoasis/vim-devicons'
