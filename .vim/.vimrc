@@ -19,6 +19,6 @@ set guifont=Suruma\ 11
 
 let g:polyglot_disabled = ['autoindent']
 
-so ~/.vim/plugins.vim
-so ~/.vim/maps.vim
-so ~/.vim/plugin-config.vim
+so ~/dotfiles/.vim/plugins.vim
+so ~/dotfiles/.vim/maps.vim
+so ~/dotfiles/.vim/plugin-config.vim

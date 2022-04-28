@@ -101,9 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-alias mongodb="sudo systemctl start mongod"
 alias ComAndRunC="compileC $1 $2 && ./$2"
 alias python="python3"
+alias aptUU="sudo apt update && sudo apt upgrade"
 
 # custom functions
 
@@ -124,12 +124,11 @@ compileAndRunC() {
 
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
-# Run a random color script each time that you run a terminal
-colorscripts_folder="$HOME/ColorScripts"
-if [ -d $colorscripts_folder ]
-then
-  bash "$colorscripts_folder/$(ls $colorscripts_folder | sort -R | tail -n 1)"
-fi
-
-# A neccessary configuration to play games
+# A neccessary configuration to play windows games
 export MESA_GL_VERSION_OVERRIDE=4.4
+
+# some gpg config
+[ -f "/home/fernando/.ghcup/env" ] && source "/home/fernando/.ghcup/env" # ghcup-env
+
+# run neofetch in each new zsh terminal
+neofetch

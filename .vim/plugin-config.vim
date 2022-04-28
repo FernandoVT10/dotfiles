@@ -2,7 +2,7 @@
 let g:closetag_filenames = '*.html,*.jsx,*.tsx'
 
 let g:lightline = {
-  \ 'colorscheme': 'embark',
+  \ 'colorscheme': 'onedark',
   \ 'active': {
   \   'left': [[ 'mode', 'paste' ], ['gitbranch'], [ 'readonly', 'filename',  'modified' ]],
   \   'right': [['lineinfo'], ['filetype']]
@@ -29,16 +29,13 @@ endfunction
 let g:user_emmet_leader_key=','
 
 " Set theme
-
 set termguicolors
+colorscheme onedark
 
-" let g:material_style='oceanic'
-" set background=dark
-colorscheme embark
-
+" Set the color of comments
 hi Comment guifg=#ABCDEF
 
-" Set background transparetn
+" Set background transparent
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
 
@@ -50,7 +47,7 @@ let NERDTreeQuitOnOpen=1
 autocmd CursorHold * silent call CocActionAsync("highlight")
 
 " UltiSnips
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/dotfiles/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
@@ -60,7 +57,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = "left"
 
 " Testing configuration
-let test#strategy = "vimux"
+let test#strategy = "neovim"
 
 " markdown preview
-let g:mkdp_browser = 'google-chrome'
+let g:mkdp_browser = 'brave-browser'

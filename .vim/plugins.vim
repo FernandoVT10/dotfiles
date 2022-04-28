@@ -7,16 +7,18 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-dispatch'
 
 " themes and pretty things
-Plug 'morhetz/gruvbox'
-Plug 'joshdick/onedark.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'itchyny/lightline.vim'
+
+" themes
+Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'haishanh/night-owl.vim'
+Plug 'folke/tokyonight.nvim'
 Plug 'hzchirs/vim-material'
 Plug 'arcticicestudio/nord-vim'
-Plug 'folke/tokyonight.nvim'
-Plug 'haishanh/night-owl.vim'
 Plug 'hzchirs/vim-material'
-Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 
 " Syntax highlight
 Plug 'sheerun/vim-polyglot'
