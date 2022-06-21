@@ -22,6 +22,7 @@ Plug 'joshdick/onedark.vim'
 
 " Syntax highlight
 Plug 'sheerun/vim-polyglot'
+Plug 'posva/vim-vue'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
