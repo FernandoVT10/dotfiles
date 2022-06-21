@@ -127,6 +127,9 @@ compileAndRunC() {
 # A neccessary configuration to play windows games
 export MESA_GL_VERSION_OVERRIDE=4.4
 
+# To use vim-like commands
+bindkey -v
+
 # some gpg config
 [ -f "/home/fernando/.ghcup/env" ] && source "/home/fernando/.ghcup/env" # ghcup-env
 
