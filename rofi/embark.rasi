@@ -1,0 +1,47 @@
+* {
+  background: rgba(13, 15, 23, 50%);
+
+  background-color: @background;
+  text-color: #91DDFF;
+}
+
+window {
+  width: 50%;
+  height: 50%;
+  /* border: 1px 1px 1px 1px; */
+  /* border-color: #91DDFF; */
+}
+
+inputbar {
+  border-color: #568296;
+  children: [prompt,entry];
+}
+
+prompt {
+  padding: 20px;
+}
+
+textbox {
+  border: 0 0 1px 0;
+}
+
+entry {
+  padding: 20px;
+  background: red;
+}
+
+listview {
+  cycle: false;
+  scrollbar: false;
+  background: red;
+}
+
+element {
+  border: 0 0 1px 0;
+  border-color: #1E1C31;
+  padding: 20px;
+}
+
+element selected {
+  background-color: rgba(23, 27, 40, 50%);
+}

@@ -22,6 +22,8 @@ require("awful.hotkeys_popup.keys")
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
 
+local ROFI_DIR = os.getenv("HOME") .. "/.config/rofi"
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -342,8 +344,12 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"}),
+    awful.key({ modkey }, "p", function() awful.util.spawn("rofi -show drun") end,
+              {description = "Show Rofi", group = "launcher"}),
+
+    -- Rofi with web search
+    awful.key({ modkey }, "b", function() awful.util.spawn("rofi -show web_search") end,
+              {description = "Show Rofi With Web Search", group = "launcher"}),
 
     -- Volume
     --
