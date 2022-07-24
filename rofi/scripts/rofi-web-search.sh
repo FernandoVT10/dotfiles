@@ -5,5 +5,5 @@ echo -en "\0prompt\x1fSearch\n"
 
 if [ ! -z "$@" ]; then
   $ROFI_DIR/scripts/web-search.py "$@"
-  exit;
+  exit 0
 fi

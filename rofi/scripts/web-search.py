@@ -2,8 +2,8 @@
 
 import requests
 import sys
-import subprocess
 
+from subprocess import Popen, DEVNULL
 from xml.dom import minidom
 
 CONFIG = {
@@ -18,7 +18,7 @@ CONFIG = {
 }
 
 def open_browser(url):
-    subprocess.run(["xdg-open", url], stdout=subprocess.DEVNULL)
+    Popen(["xdg-open", url], stdout=DEVNULL)
     sys.exit()
 
 def get_suggestions(search_engine, search_string):
@@ -72,6 +72,7 @@ def check_search_string(search_string):
         return
 
     open_browser(url)
+
 def main():
     search_string = sys.argv[1]
     search_engine = "brave"
