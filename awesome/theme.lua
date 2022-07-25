@@ -13,24 +13,28 @@ local gears = require("gears")
 
 local theme = {}
 
+local bg_color = "#030209"
+local dark_bg_color = "#08070e"
+local fg_color = "#B7B5E4";
+
 theme.font          = "JetBrains Bold 8"
 
-theme.bg_normal     = "#100E23"
-theme.bg_focus      = "#1E1C31"
+theme.bg_normal     = bg_color
+theme.bg_focus      = dark_bg_color
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#8A889D"
-theme.fg_focus      = "#ffffff"
+theme.fg_normal     = fg_color
+theme.fg_focus      = fg_color
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(1)
 theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
-theme.border_marked = "#91231c"
+theme.border_focus  = "#000"
+theme.border_marked = "#000"
 
 theme.taglist_fg_focus = "#87DFEB"
 -- local new_shape = function(cr, width, height)
@@ -105,7 +109,7 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "/home/fernando/Pictures/Wallpapers/82734683_p0.jpg"
+theme.wallpaper = "/home/fernando/Pictures/Wallpapers/monogatari-3.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
