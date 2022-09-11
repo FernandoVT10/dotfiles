@@ -1,6 +1,6 @@
 export ZSH="/home/fernando/.oh-my-zsh"
 
-ZSH_THEME="agnoster"
+ZSH_THEME="clean"
 
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
