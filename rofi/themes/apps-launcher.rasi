@@ -1,0 +1,97 @@
+configuration {
+  modi: "drun,filebrowser,run";
+  display-drun: "﩯";
+  display-filebrowser: "";
+  display-run: "";
+}
+
+* {
+  bg: #181825;
+  bg-alt: #11111b;
+  fg: #cdd6f4;
+  fg-alt: #585b70;
+  selected: #89b4fa;
+  icon-font: "JetBrains 14";
+
+  font: "JetBrains 10";
+  text-color: @fg;
+  background-color: @bg;
+}
+
+window {
+  width: 600px;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+// Input Bar
+
+inputbar {
+  padding: 30px 20px;
+  background-image: url("./assets/wallpaper.jpg", width);
+  height: 200px;
+  children: [textbox-prompt-colon, entry, mode-switcher];
+  spacing: 20px;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  padding: 0 20px;
+  border-radius: 50%;
+  vertical-align: 0.5;
+  content: " ";
+  font: "JetBrains bold 12";
+}
+
+entry {
+  placeholder: "Search";
+  placeholder-color: @fg-alt;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+// Mode-switcher
+mode-switcher {
+  width: 180px;
+  background-color: transparent;
+}
+
+button {
+  font: @icon-font;
+  border-radius: 50%;
+}
+
+button selected {
+  background-color: @bg-alt;
+  text-color: @selected;
+}
+
+// List View
+listview {
+  columns: 1;
+  lines: 6;
+  padding: 10px;
+}
+
+element {
+  padding: 20px;
+  spacing: 20px;
+  border-radius: 40px;
+}
+
+element selected {
+  background-color: @bg-alt;
+}
+
+element-icon {
+  size: 30;
+  background-color: inherit;
+}
+
+element-text {
+  vertical-align: 0.5;
+  background-color: inherit;
+  highlight: bold underline #89b4fa;
+}
