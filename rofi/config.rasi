@@ -2,7 +2,7 @@
 configuration {
   modi: "window,run,ssh,drun,combi,web_search:/home/fernando/.config/rofi/scripts/rofi-web-search.sh";
   show-icons: true;
-  icon-theme: "Flatery-Indigo-Dark";
+  icon-theme: "Infinity-Dark-Icons";
 }
 
 @theme "themes/apps-launcher"
