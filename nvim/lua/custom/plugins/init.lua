@@ -7,11 +7,8 @@ return {
         "stylua",
 
         -- web dev
-        "html-lsp",
-        "css-lsp",
         "typescript-language-server",
         "vue-language-server",
-        "json-lsp",
         "emmet-ls"
       }
     }
@@ -24,5 +21,14 @@ return {
         }
       }
     }
+  },
+  ["iamcco/markdown-preview.nvim"] = {
+    run = function() vim.fn["mkdp#util#install"]() end
+  },
+  ["neovim/nvim-lspconfig"] = {
+    config = function()
+      require("plugins.configs.lspconfig")
+      require("custom.plugins.lspconfig")
+    end
   }
 }

@@ -14,18 +14,18 @@ M.general = {
   n = {
     ["<leader>q"] = {
       function()
-        require("core.utils").close_buffer()
+        require("nvchad_ui.tabufline").close_buffer()
       end
     }, -- quit file
     ["<leader>w"] = { "<cmd> w <CR>"}, -- save file
     ["gt"] = {
       function()
-        require("core.utils").tabuflineNext()
+        require("nvchad_ui.tabufline").tabuflineNext()
       end
     }, -- go to next tab
     ["gT"] = {
       function()
-        require("core.utils").tabuflinePrev()
+        require("nvchad_ui.tabufline").tabuflinePrev()
       end
     } -- go to prev tab
   }
