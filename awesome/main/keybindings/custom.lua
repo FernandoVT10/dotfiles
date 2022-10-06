@@ -8,7 +8,7 @@ local customBindings = gears.table.join(
     group = "launcher"
   }),
   -- Rofi
-  awful.key({ MOD_KEY }, "p", function() awful.util.spawn("rofi -show drun") end, {
+  awful.key({ MOD_KEY }, "p", function() awful.util.spawn("rofi -show drun -theme \"apps-launcher\"") end, {
     description = "Show Rofi",
     group = "launcher"
   }),

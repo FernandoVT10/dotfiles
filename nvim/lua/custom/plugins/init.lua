@@ -9,7 +9,8 @@ return {
         -- web dev
         "typescript-language-server",
         "vue-language-server",
-        "emmet-ls"
+        "emmet-ls",
+        "eslint_d"
       }
     }
   },

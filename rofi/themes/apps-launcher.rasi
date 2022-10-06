@@ -5,18 +5,7 @@ configuration {
   display-run: "";
 }
 
-* {
-  bg: #181825;
-  bg-alt: #11111b;
-  fg: #cdd6f4;
-  fg-alt: #585b70;
-  selected: #89b4fa;
-  icon-font: "JetBrains 14";
-
-  font: "JetBrains 10";
-  text-color: @fg;
-  background-color: @bg;
-}
+@import "colors"
 
 window {
   width: 600px;
