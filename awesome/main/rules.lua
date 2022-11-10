@@ -94,7 +94,7 @@ awful.rules.rules = {
     rule = { class = "Brave-browser" },
     properties = {
       screen = awful.screen.focused,
-      tag = "2"
+      tag = awful.screen.focused().tags[2]
     }
   },
 }
