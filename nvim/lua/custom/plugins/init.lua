@@ -10,7 +10,10 @@ return {
         "typescript-language-server",
         "vue-language-server",
         "emmet-ls",
-        "eslint_d"
+        "eslint_d",
+
+        -- python
+        "python-lsp-server",
       }
     }
   },
@@ -31,5 +34,9 @@ return {
       require("plugins.configs.lspconfig")
       require("custom.plugins.lspconfig")
     end
+  },
+  ["goolord/alpha-nvim"] = {
+    disable = false,
+    cmd = "Alpha",
   }
 }
