@@ -19,8 +19,15 @@ local taglist_buttons = gears.table.join(
 )
 
 local function get_tag_list_widget(s)
-  awful.tag.new({ "", "  " }, s, awful.layout.suit.max.fullscreen)
-  awful.tag.new({ "", "", "", "" }, s, awful.layout.suit.tile)
+  for i, tagName in ipairs({ "", "  ", "", "", "", "" }) do
+    local layout = i > 2 and awful.layout.suit.tile or awful.layout.suit.max.fullscreen
+
+    awful.tag.add(tagName, {
+      layout = layout,
+      screen = s,
+      selected = i == 1
+    })
+  end
 
   local tagList = awful.widget.taglist {
     screen  = s,
