@@ -90,11 +90,10 @@ awful.rules.rules = {
   },
 
   -- custom rules
-  {
-    rule = { class = "Brave-browser" },
-    properties = {
-      screen = awful.screen.focused,
-      tag = awful.screen.focused().tags[2]
-    }
-  },
+  -- {
+  --   rule = { class = "Brave-browser" },
+  --   properties = {
+  --     tag = awful.screen.focused().tags[2]
+  --   }
+  -- },
 }

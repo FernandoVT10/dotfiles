@@ -10,6 +10,14 @@ local function focusPreviousClientByIndex()
   awful.client.focus.byidx(-1)
 end
 
+local function focusNextScreen()
+  awful.screen.focus_relative(1)
+end
+
+local function focusPreviousScreen()
+  awful.screen.focus_relative(-1)
+end
+
 local generalBindings = gears.table.join(
   -- client manipulation
   awful.key({ MOD_KEY }, "j", focusNextClientByIndex, {
@@ -82,6 +90,10 @@ local generalBindings = gears.table.join(
     description = "select previous",
     group = "layout"
   }),
+  awful.key({ MOD_KEY }, "o", function (c) c:move_to_screen() end, {
+    description = "move to screen",
+    group = "client"
+  }),
 
   -- awesome keybindings
   awful.key({ MOD_KEY, "Control" }, "r", awesome.restart, {
@@ -94,6 +106,16 @@ local generalBindings = gears.table.join(
   awful.key({ MOD_KEY }, "s", hotkeys_popup.show_help, {
     description = "show help",
     group = "awesome"
+  }),
+
+  -- screen manipulation
+  awful.key({ MOD_KEY }, "n", focusNextScreen, {
+    description = "focus the next screen",
+    group = "screen"
+  }),
+  awful.key({ MOD_KEY }, "m", focusPreviousScreen, {
+    description = "focus the previous screen",
+    group = "screen"
   })
 )
 
