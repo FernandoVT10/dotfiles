@@ -27,7 +27,18 @@ M.general = {
       function()
         require("nvchad_ui.tabufline").tabuflinePrev()
       end
-    } -- go to prev tab
+    }, -- go to prev tab
+    ["<leader>l"] = {
+      function()
+        require("nvchad_ui.tabufline").move_buf(1)
+      end
+    },
+    ["<leader>h"] = {
+      function()
+        require("nvchad_ui.tabufline").move_buf(-1)
+      end
+    },
+    ["<leader>s"] = { "<Plug>(easymotion-s2)" }
   }
 }
 

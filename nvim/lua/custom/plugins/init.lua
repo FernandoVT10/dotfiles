@@ -17,7 +17,7 @@ return {
       }
     }
   },
-  ["kyazdani42/nvim-tree.lua"] = {
+  ["nvim-tree/nvim-tree.lua"] = {
     override_options = {
       actions = {
         open_file = {
@@ -38,5 +38,6 @@ return {
   ["goolord/alpha-nvim"] = {
     disable = false,
     cmd = "Alpha",
-  }
+  },
+  ["easymotion/vim-easymotion"] = {}
 }
