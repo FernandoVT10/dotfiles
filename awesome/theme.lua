@@ -1,17 +1,7 @@
-local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
-local gfs = require("gears.filesystem")
-local themes_path = gfs.get_themes_dir()
-
-local gears = require("gears")
-
 local theme = {}
-
-local bg_color = "#030209"
-local dark_bg_color = "#08070e"
-local fg_color = "#B7B5E4";
 
 theme.font          = "JetBrains Bold 8"
 
@@ -45,7 +35,7 @@ theme.volume_widget_bg = "#181825"
 theme.cpu_widget_bg = "#1e1e2e"
 theme.memory_widget_bg = "#181825"
 
-theme.wallpaper = "/home/fernando/Documents/Syncthing/Wallpapers/785576.png"
+theme.wallpaper = "/home/fernando/Pictures/Wallpaper"
 
 theme.icon_theme = os.getenv("HOME") .. "/.icons/Infinity-Dark-Icons/"
 
