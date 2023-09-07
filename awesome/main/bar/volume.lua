@@ -12,7 +12,7 @@ local alsa = lain.widget.alsa({
 })
 
 local volume_icon = wibox.widget {
-  markup = markup.fg.color("#89b4fa", " "),
+  markup = markup.fontfg("JetBrains Mono 10", "#89b4fa", " "),
   widget = wibox.widget.textbox
 }
 

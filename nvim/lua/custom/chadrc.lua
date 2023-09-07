@@ -1,10 +1,10 @@
 local M = {}
 
 M.ui = {
-  theme = "catppuccin"
+  theme = "decay"
 }
 
-M.plugins = require "custom.plugins"
+M.plugins = "custom.plugins"
 
 M.mappings = require "custom.mappings"
 

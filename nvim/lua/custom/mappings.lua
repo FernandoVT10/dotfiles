@@ -44,7 +44,17 @@ M.general = {
 
 M.nvimtree = {
   n = {
-    ["<leader>nt"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" }
+    ["<leader>nt"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" },
+    ["<leader>tw"] = {
+      function ()
+        local pathToTest = vim.fn.expand("%");
+        require("nvterm.terminal").send(
+          "npm run test -w api -- --watch " .. pathToTest,
+          "vertical"
+        )
+      end,
+      "Run test file in watch mode"
+    }
   }
 }
 

@@ -3,7 +3,7 @@ local beautiful = require("beautiful")
 local markup = require("lain.util.markup")
 
 local clock_icon = wibox.widget {
-  markup = markup.fg.color("#a6adc8", " "),
+  markup = markup.fontfg("JetBrains Mono 10", "#a6adc8", " "),
   widget = wibox.widget.textbox
 }
 

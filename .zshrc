@@ -17,7 +17,9 @@ alias cdconf="cd $HOME/dotfiles"
 alias mongoUp="sudo systemctl start mongod"
 alias mongoDown="sudo systemctl stop mongod"
 
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$HOME/.nvm/nvm.sh" ] && \. $NVM_DIR/nvm.sh  # This loads NVM
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # A neccessary configuration to play windows games with wine
 export MESA_GL_VERSION_OVERRIDE=4.4
@@ -30,3 +32,7 @@ bindkey -v
 
 # run neofetch in each new zsh terminal
 neofetch
+
+export PATH=$PATH:/home/fernando/.spicetify
+
+export TERM=xterm-256color

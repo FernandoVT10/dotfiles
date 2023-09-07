@@ -37,6 +37,7 @@ theme.border_marked = "#000"
 theme.wibar_height = 30
 
 theme.taglist_spacing = 5
+theme.taglist_font = "JetBrains Mono 8"
 
 -- Custom Sytles
 theme.clock_widget_bg = "#11111b"
@@ -44,7 +45,7 @@ theme.volume_widget_bg = "#181825"
 theme.cpu_widget_bg = "#1e1e2e"
 theme.memory_widget_bg = "#181825"
 
-theme.wallpaper = "/home/fernando/Pictures/Wallpapers/girl-wall.jpg"
+theme.wallpaper = "/home/fernando/Documents/Syncthing/Wallpapers/785576.png"
 
 theme.icon_theme = os.getenv("HOME") .. "/.icons/Infinity-Dark-Icons/"
 
