@@ -33,6 +33,10 @@ bindkey -v
 # run neofetch in each new zsh terminal
 neofetch
 
-export PATH=$PATH:/home/fernando/.spicetify
+export PATH=$PATH:/home/fernando/.local/bin
 
 export TERM=xterm-256color
+
+# This will allow me to use ranger with image preview
+# "TERM" should be equal to "xterm-kitty" to render images correctly
+alias ranger-fm="env TERM=xterm-kitty ranger"
