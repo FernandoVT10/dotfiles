@@ -15,6 +15,9 @@ local plugins = {
 
         -- python
         "python-lsp-server",
+
+        -- rust
+        "rust-analyzer",
       }
     }
   },
@@ -60,6 +63,10 @@ local plugins = {
         log_level = "error"
       }
     end,
+    lazy = false
+  },
+  {
+    "rust-lang/rust.vim",
     lazy = false
   }
 }
