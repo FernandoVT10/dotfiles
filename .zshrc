@@ -40,3 +40,8 @@ export TERM=xterm-256color
 # This will allow me to use ranger with image preview
 # "TERM" should be equal to "xterm-kitty" to render images correctly
 alias ranger-fm="env TERM=xterm-kitty ranger"
+
+# Use CTRL + W instead of Arrow-Up
+bindkey '^W' history-beginning-search-backward
+# Use CTRL + W instead of Arrow-Down
+bindkey '^S' history-beginning-search-forward
