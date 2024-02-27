@@ -68,6 +68,10 @@ local plugins = {
   {
     "rust-lang/rust.vim",
     lazy = false
+  },
+  {
+    "vim-test/vim-test",
+    lazy = false
   }
 }
 
