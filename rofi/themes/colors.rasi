@@ -4,9 +4,9 @@
   fg: #cdd6f4;
   fg-alt: #585b70;
   selected: #89b4fa;
-  icon-font: "JetBrains 14";
+  icon-font: "JetBrainsMonoNL 20";
 
-  font: "JetBrains 10";
+  font: "JetBrainsMonoNL Bold 10";
   text-color: @fg;
   background-color: @bg;
 }

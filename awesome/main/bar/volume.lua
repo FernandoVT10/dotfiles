@@ -8,11 +8,12 @@ local alsa = lain.widget.alsa({
   settings = function()
     widget:set_text(volume_now.level .. "%")
   end,
+  cmd = "amixer -c 1",
   timeout = 1
 })
 
 local volume_icon = wibox.widget {
-  markup = markup.fontfg("JetBrains Mono 10", "#89b4fa", " "),
+  markup = markup.fontfg("JetBrains Mono 10", "#89b4fa", "  "),
   widget = wibox.widget.textbox
 }
 

@@ -27,11 +27,11 @@ inputbar {
 
 textbox-prompt-colon {
   expand: false;
-  padding: 0 20px;
+  padding: 0 25px 0 21px;
   border-radius: 50%;
   vertical-align: 0.5;
-  content: " ";
-  font: "JetBrains bold 12";
+  content: "";
+  font: "JetBrainsMonoNL Bold 10";
 }
 
 entry {

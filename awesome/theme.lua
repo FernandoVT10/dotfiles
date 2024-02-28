@@ -3,7 +3,7 @@ local dpi = xresources.apply_dpi
 
 local theme = {}
 
-theme.font          = "JetBrains Bold 8"
+theme.font          = "JetBrainsMonoNL Bold 10"
 
 -- Default Settings
 
@@ -24,10 +24,9 @@ theme.border_normal = "#000"
 theme.border_focus  = "#000"
 theme.border_marked = "#000"
 
-theme.wibar_height = 30
+theme.wibar_height = 35
 
 theme.taglist_spacing = 5
-theme.taglist_font = "JetBrains Mono 8"
 
 -- Custom Sytles
 theme.clock_widget_bg = "#11111b"

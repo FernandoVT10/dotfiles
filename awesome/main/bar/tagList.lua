@@ -19,7 +19,7 @@ local taglist_buttons = gears.table.join(
 )
 
 local function get_tag_list_widget(s)
-  for i, tagName in ipairs({ "", "", "", " ", " ", "" }) do
+  for i, tagName in ipairs({ " ", " ", " ", "󰉋 ", "󰣇 " }) do
     local layout = i > 2 and awful.layout.suit.tile or awful.layout.suit.max.fullscreen
 
     awful.tag.add(tagName, {
