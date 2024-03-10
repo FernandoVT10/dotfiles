@@ -72,6 +72,10 @@ local plugins = {
   {
     "vim-test/vim-test",
     lazy = false
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false
   }
 }
 

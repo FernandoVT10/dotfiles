@@ -39,7 +39,13 @@ M.general = {
       end
     },
     ["<leader>s"] = { "<Plug>(easymotion-s2)" },
-    ["<leader>t"] = { ":TestNearest <CR>" }
+    ["<leader>t"] = { ":TestNearest <CR>" },
+
+    -- VIM TMUX NAVIGATOR
+    ["<C-h>"] = { "<cmd> TmuxNavigateLeft <CR>", "Window Left" },
+    ["<C-l>"] = { "<cmd> TmuxNavigateRight <CR>", "Window Right" },
+    ["<C-j>"] = { "<cmd> TmuxNavigateDown <CR>", "Window Down" },
+    ["<C-k>"] = { "<cmd> TmuxNavigateUp <CR>", "Window Up" },
   }
 }
 
