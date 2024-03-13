@@ -24,6 +24,9 @@ export NVM_DIR="$HOME/.nvm"
 # A neccessary configuration to play windows games with wine
 export MESA_GL_VERSION_OVERRIDE=4.4
 
+# use vim-like commands
+bindkey -v
+
 # some gpg config
 [ -f "/home/fernando/.ghcup/env" ] && source "/home/fernando/.ghcup/env" # ghcup-env
 
