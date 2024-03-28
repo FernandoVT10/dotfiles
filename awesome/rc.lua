@@ -4,6 +4,7 @@ local gears = require("gears")
 local awful = require("awful")
 local beautiful = require("beautiful")
 local menubar = require("menubar")
+local get_files_from_folder = require("main.getFilesFromFolder")
 
 require("awful.autofocus")
 
@@ -24,16 +25,13 @@ awful.layout.layouts = {
 
 menubar.utils.terminal = TERMINAL
 
+WALLPAPER_FOLDER = string.format("%s/Pictures/Wallpaper", os.getenv("HOME"))
+
+local wallpaper_list = get_files_from_folder(WALLPAPER_FOLDER)
+local wallpaper = wallpaper_list[math.random(0, #wallpaper_list)]
+
 local function set_wallpaper(s)
-    -- Wallpaper
-    if beautiful.wallpaper then
-        local wallpaper = beautiful.wallpaper
-        -- If wallpaper is a function, call it with the screen
-        if type(wallpaper) == "function" then
-            wallpaper = wallpaper(s)
-        end
-        gears.wallpaper.maximized(wallpaper, s, false)
-    end
+  gears.wallpaper.maximized(wallpaper, s, false)
 end
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)

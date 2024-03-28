@@ -1,4 +1,3 @@
-local awful = require("awful")
 local gears = require("gears")
 
 local bindings = gears.table.join(
