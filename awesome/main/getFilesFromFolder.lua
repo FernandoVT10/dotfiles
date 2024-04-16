@@ -1,5 +1,5 @@
 local function get_files_from_folder(path)
-  local res = io.popen(string.format("find \"%s\" -type f", path))
+  local res = io.popen(string.format("find \"%s\" -maxdepth 1 -type f", path))
 
   if res == nil then
     return {}
