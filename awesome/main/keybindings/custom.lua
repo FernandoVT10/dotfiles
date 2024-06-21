@@ -5,17 +5,13 @@ local get_files_from_folder = require("main.getFilesFromFolder")
 
 -- Defined on the rc.lua
 local wallpaper_list = get_files_from_folder(WALLPAPER_FOLDER)
-local active_wallpaper = 0
 
 local function changeWallpaper ()
+  math.randomseed(os.time());
+  local active_wallpaper = math.random(0, #wallpaper_list)
+
   for s in screen do
     gears.wallpaper.maximized(wallpaper_list[active_wallpaper], s)
-  end
-
-  if active_wallpaper == #wallpaper_list then
-    active_wallpaper = 0
-  else
-    active_wallpaper = active_wallpaper + 1
   end
 end
 
