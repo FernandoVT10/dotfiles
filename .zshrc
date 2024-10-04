@@ -1,4 +1,4 @@
-export ZSH="/home/fernando/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="clean"
 
@@ -33,7 +33,7 @@ bindkey -v
 # run neofetch in each new zsh terminal
 neofetch
 
-export PATH=$PATH:/home/fernando/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 
 export TERM=xterm-256color
 
