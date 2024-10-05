@@ -17,6 +17,7 @@ alias cdconf="cd $HOME/dotfiles"
 alias mongoUp="sudo systemctl start mongod"
 alias mongoDown="sudo systemctl stop mongod"
 
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOME/.nvm/nvm.sh" ] && \. $NVM_DIR/nvm.sh  # This loads NVM
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -42,6 +43,9 @@ export TERM=xterm-256color
 alias ranger-fm="env TERM=xterm-kitty ranger"
 
 # Use CTRL + W instead of Arrow-Up
-bindkey '^W' history-beginning-search-backward
+bindkey "^W" history-beginning-search-backward
 # Use CTRL + W instead of Arrow-Down
-bindkey '^S' history-beginning-search-forward
+bindkey "^S" history-beginning-search-forward
+
+# Use CapsLock as a second escape
+setxkbmap -option caps:escape
