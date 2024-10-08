@@ -16,3 +16,5 @@ vim.keymap.set("n", "<C-l>", "<CMD> TmuxNavigateRight <CR>")
 vim.keymap.set("n", "<C-j>", "<CMD> TmuxNavigateDown <CR>")
 vim.keymap.set("n", "<C-k>", "<CMD> TmuxNavigateUp <CR>")
 
+-- Tabs
+vim.keymap.set("n", "<Leader>t", "<CMD> tabnew<CR>")
