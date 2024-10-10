@@ -32,7 +32,16 @@ require("pckr").add{
     end
   };
 
-  "nvim-treesitter/nvim-treesitter",
+  {
+    "nvim-treesitter/nvim-treesitter",
+    config = function()
+      require "nvim-treesitter.configs".setup {
+        highlight = {
+          enable = true,
+        }
+      }
+    end
+  },
   {
     "numToStr/Comment.nvim",
     config = function()
@@ -92,4 +101,7 @@ require("pckr").add{
   },
 
   "folke/tokyonight.nvim",
+  "nvim-lua/plenary.nvim",
+  "nvim-telescope/telescope.nvim",
+  "ej-shafran/compile-mode.nvim",
 }
