@@ -31,9 +31,6 @@ bindkey -v
 # some gpg config
 [ -f "/home/fernando/.ghcup/env" ] && source "/home/fernando/.ghcup/env" # ghcup-env
 
-# run neofetch in each new zsh terminal
-neofetch
-
 export PATH=$PATH:$HOME/.local/bin
 
 export TERM=xterm-256color
@@ -49,3 +46,6 @@ bindkey "^S" history-beginning-search-forward
 
 # Use CapsLock as a second escape
 setxkbmap -option caps:escape
+
+# run neofetch in each new zsh terminal
+neofetch
