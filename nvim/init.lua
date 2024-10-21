@@ -13,3 +13,8 @@ require("plugins")
 
 vim.opt.termguicolors = true
 vim.cmd.colorscheme("tokyonight-night")
+
+-- Compile Mode highlight
+vim.cmd.highlight("CompileModeError", "guifg=#f7768e")
+vim.cmd.highlight("CompileModeMessageRow", "guifg=#7aa2f7")
+vim.cmd.highlight("CompileModeMessageCol", "guifg=#7dcfff")

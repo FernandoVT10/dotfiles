@@ -106,5 +106,19 @@ require("pckr").add{
   "folke/tokyonight.nvim",
   "nvim-lua/plenary.nvim",
   "nvim-telescope/telescope.nvim",
-  "ej-shafran/compile-mode.nvim",
+  {
+    "ej-shafran/compile-mode.nvim",
+    config = function()
+      vim.g.compile_mode = {
+        error_regexp_table = {
+          typescript = {
+            regex = "^\\(.\\+\\)(\\([1-9][0-9]*\\),\\([1-9][0-9]*\\)): error TS[1-9][0-9]*:",
+            filename = 1,
+            row = 2,
+            col = 3,
+          }
+        }
+      }
+    end
+  },
 }

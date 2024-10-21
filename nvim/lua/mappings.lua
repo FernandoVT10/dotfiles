@@ -26,3 +26,6 @@ vim.keymap.set("n", "<Leader>fb", "<CMD>Telescope buffers<CR>")
 
 -- Compile Mode
 vim.keymap.set("n", "<Leader>c", ":below Compile ")
+vim.keymap.set("n", "<Leader>rc", ":Recompile<CR>")
+vim.keymap.set("n", "<Leader>ne", ":CompileNextError<CR>")
+vim.keymap.set("n", "<Leader>pe", ":CompilePrevError<CR>")
