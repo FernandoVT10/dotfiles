@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<Leader>w", "<CMD>w<CR>")
 vim.keymap.set("n", "<Leader>q", "<CMD>q<CR>")
 
+-- Removes search highlight
+vim.keymap.set("n", "<Esc>", "<CMD>noh<CR>")
+
 -- Nvim Tree
 vim.keymap.set("n", "<Leader>nt", "<CMD>NvimTreeToggle<CR>")
 
