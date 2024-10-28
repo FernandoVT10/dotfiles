@@ -11,7 +11,7 @@ local cpu = lain.widget.cpu({
 })
 
 local cpu_icon = wibox.widget {
-  markup = markup.fg.color("#a6e3a1", "  "),
+  markup = markup.fontfg("JetBrainsMonoNL Bold 16", "#a6e3a1", "󰍛 "),
   widget = wibox.widget.textbox
 }
 

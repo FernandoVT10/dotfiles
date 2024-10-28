@@ -11,7 +11,7 @@ local memory = lain.widget.mem({
 })
 
 local memory_icon = wibox.widget {
-  markup = markup.fg.color("#f9e2af", "﬙  "),
+  markup = markup.fontfg("JetBrainsMonoNL Bold 12", "#f9e2af", "  "),
   widget = wibox.widget.textbox
 }
 
