@@ -18,3 +18,7 @@ vim.cmd.colorscheme("tokyonight-night")
 vim.cmd.highlight("CompileModeError", "guifg=#f7768e")
 vim.cmd.highlight("CompileModeMessageRow", "guifg=#7aa2f7")
 vim.cmd.highlight("CompileModeMessageCol", "guifg=#7dcfff")
+
+vim.opt.list = true
+vim.opt.listchars:append("trail:$")
+
