@@ -22,3 +22,4 @@ vim.cmd.highlight("CompileModeMessageCol", "guifg=#7dcfff")
 vim.opt.list = true
 vim.opt.listchars:append("trail:$")
 
+require("lspSetup")

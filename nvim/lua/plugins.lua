@@ -100,9 +100,16 @@ require("pckr").add{
           end, { "i", "s" }),
         },
         sources = cmp.config.sources({
+          { name = "nvim_lsp" },
           { name = "buffer" },
         })
       }
+    end
+  },
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup()
     end
   },
 
