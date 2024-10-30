@@ -1,3 +1,5 @@
+local utils = require("utils")
+
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<Leader>w", "<CMD>w<CR>")
@@ -32,3 +34,9 @@ vim.keymap.set("n", "<Leader>c", ":below Compile ")
 vim.keymap.set("n", "<Leader>rc", ":below Recompile<CR>")
 vim.keymap.set("n", "<Leader>ne", ":CompileNextError<CR>")
 vim.keymap.set("n", "<Leader>pe", ":CompilePrevError<CR>")
+
+-- LSP mappings
+vim.keymap.set("n", "gd", "<CMD>lua vim.lsp.buf.definition()<CR>")
+
+-- Toggle LSP diagnostics
+vim.keymap.set("n", "<Leader>dg", utils.toggleLspDiagnostic)

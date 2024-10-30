@@ -1,3 +1,5 @@
+local utils = require("utils")
+
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
@@ -21,5 +23,8 @@ vim.cmd.highlight("CompileModeMessageCol", "guifg=#7dcfff")
 
 vim.opt.list = true
 vim.opt.listchars:append("trail:$")
+
+-- Deactivate lsp diagnostic by default
+utils.toggleLspDiagnostic()
 
 require("lspSetup")
