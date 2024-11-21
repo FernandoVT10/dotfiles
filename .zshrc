@@ -11,6 +11,7 @@ alias aptUp="sudo apt update && sudo apt upgrade"
 alias cdconf="cd $HOME/dotfiles"
 alias cdwork="cd $HOME/Documents/workplace/dream"
 alias cdhope="cd $HOME/Documents/workplace/last-hope-blog"
+alias cdnotes="cd $HOME/Notes"
 
 # NVM (node version manager) Setup
 export NVM_DIR="$HOME/.nvm"
