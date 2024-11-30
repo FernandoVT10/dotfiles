@@ -27,4 +27,6 @@ vim.opt.listchars:append("trail:$")
 -- Deactivate lsp diagnostic by default
 utils.toggleLspDiagnostic()
 
+vim.cmd("autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4");
+
 require("lspSetup")
