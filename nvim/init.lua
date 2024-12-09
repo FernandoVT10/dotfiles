@@ -27,6 +27,10 @@ vim.opt.listchars:append("trail:$")
 -- Deactivate lsp diagnostic by default
 utils.toggleLspDiagnostic()
 
+-- Use system clipboard
+vim.api.nvim_set_option("clipboard", "unnamedplus")
+
+-- Use 4-space tab for c files
 vim.cmd("autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4");
 
 require("lspSetup")
