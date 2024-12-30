@@ -30,7 +30,8 @@ utils.toggleLspDiagnostic()
 -- Use system clipboard
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 
--- Use 4-space tab for c files
+-- Use 4-space tab for c and java files
 vim.cmd("autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4");
+vim.cmd("autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4");
 
 require("lspSetup")
