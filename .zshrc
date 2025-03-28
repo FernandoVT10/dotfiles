@@ -37,3 +37,15 @@ setxkbmap -option caps:escape
 
 # run neofetch in each new zsh terminal
 neofetch
+
+# pnpm
+export PNPM_HOME=$HOME"/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+alias pn=pnpm
+# pnpm end
+
+# go
+export PATH=$PATH:/usr/local/go/bin
