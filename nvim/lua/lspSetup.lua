@@ -4,3 +4,6 @@ local lspconfig = require("lspconfig")
 lspconfig["ts_ls"].setup {
   -- capabilities = capabilities
 }
+lspconfig["gopls"].setup {
+  -- capabilities = capabilities
+}
