@@ -23,6 +23,8 @@ bindkey -v
 
 # append this folder for local binaries
 export PATH=$PATH:$HOME/.local/bin
+# binares from /usr/sbin folders (mainly nginx)
+export PATH=$PATH:/usr/sbin
 
 # I don't know what this does, but may solve some problems :)
 export TERM=xterm-256color
