@@ -1,14 +1,12 @@
 configuration {
-  modi: "drun,filebrowser,run";
+  modi: "drun";
   display-drun: "﩯";
-  display-filebrowser: "";
-  display-run: "";
 }
 
 @import "colors"
 
 window {
-  width: 600px;
+  width: 800px;
 }
 
 mainbox {
@@ -21,14 +19,14 @@ inputbar {
   padding: 30px 20px;
   background-image: url("./assets/wallpaper.jpg", width);
   height: 200px;
-  children: [textbox-prompt-colon, entry, mode-switcher];
+  children: [textbox-prompt-colon, entry];
   spacing: 20px;
 }
 
 textbox-prompt-colon {
   expand: false;
   padding: 0 25px 0 21px;
-  border-radius: 50%;
+  border-radius: 5px;
   vertical-align: 0.5;
   content: "";
   font: "JetBrainsMonoNL Bold 10";
@@ -38,13 +36,7 @@ entry {
   placeholder: "Search";
   placeholder-color: @fg-alt;
   padding: 15px;
-  border-radius: 30px;
-}
-
-// Mode-switcher
-mode-switcher {
-  width: 180px;
-  background-color: transparent;
+  border-radius: 5px;
 }
 
 button {
@@ -60,14 +52,12 @@ button selected {
 // List View
 listview {
   columns: 1;
-  lines: 6;
-  padding: 10px;
+  lines: 8;
 }
 
 element {
   padding: 20px;
   spacing: 20px;
-  border-radius: 40px;
 }
 
 element selected {
