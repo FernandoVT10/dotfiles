@@ -131,4 +131,6 @@ require("pckr").add{
       }
     end
   },
+
+  "OXY2DEV/markview.nvim",
 }
