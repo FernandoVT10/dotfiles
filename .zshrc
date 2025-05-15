@@ -17,6 +17,13 @@ alias gg="grep -irnI"
 alias ff="find | grep -i"
 alias pn=pnpm
 
+# use neovim as manpager
+# MANPAGER is not used because it gives the error "fuse: mount failed: Permission denied"
+function nvim_man() {
+    man $1 | nvim +Man!
+}
+alias manv="nvim_man"
+
 # use vim-like commands
 bindkey -v
 
