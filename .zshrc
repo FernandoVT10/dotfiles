@@ -12,7 +12,7 @@ else
 fi
 
 alias cdconf="cd $HOME/dotfiles"
-alias cdnotes="cd $HOME/Notes"
+alias cdnotes="cd $HOME/AncientWritings"
 alias gg="grep -irnI"
 alias ff="find | grep -i"
 alias pn=pnpm
