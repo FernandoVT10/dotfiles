@@ -29,14 +29,11 @@ vim.keymap.set("n", "<Leader>ff", "<CMD>Telescope find_files<CR>")
 vim.keymap.set("n", "<Leader>fg", "<CMD>Telescope live_grep<CR>")
 vim.keymap.set("n", "<Leader>fb", "<CMD>Telescope buffers<CR>")
 
--- Compile Mode
-vim.keymap.set("n", "<Leader>c", ":below Compile ")
-vim.keymap.set("n", "<Leader>rc", ":below Recompile<CR>")
-vim.keymap.set("n", "<Leader>ne", ":CompileNextError<CR>")
-vim.keymap.set("n", "<Leader>pe", ":CompilePrevError<CR>")
-
 -- LSP mappings
 vim.keymap.set("n", "gd", "<CMD>lua vim.lsp.buf.definition()<CR>")
 
 -- Toggle LSP diagnostics
 vim.keymap.set("n", "<Leader>dg", utils.toggleLspDiagnostic)
+
+-- Reruns last command-line
+vim.keymap.set("n", "<Leader>r", "<CMD>@:<CR>")
