@@ -38,9 +38,6 @@ bindkey "^S" history-beginning-search-forward
 # Use CapsLock as a second escape
 setxkbmap -option caps:escape
 
-# run neofetch in each new zsh terminal
-neofetch
-
 # Binaries and $PATH
 
 # PNPM
@@ -62,3 +59,5 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/bin
 # binares from /usr/sbin folders (mainly nginx)
 export PATH=$PATH:/usr/sbin
+
+fastfetch
