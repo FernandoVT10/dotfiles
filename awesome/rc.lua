@@ -30,7 +30,8 @@ awful.screen.connect_for_each_screen(function(s)
   set_bar(s)
 end)
 
-awful.spawn({"feh --bg-scale ~/Pictures/Wallpaper/Yuukari.png"})
+awful.spawn({"picom", "-b"})
+awful.spawn({"feh", "--bg-fill", "/home/infinity/Downloads/reze.jpg"})
 
 require("main.keybindings")
 require("main.rules")
