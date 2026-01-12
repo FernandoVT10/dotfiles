@@ -116,5 +116,4 @@ require("pckr").add{
   "folke/tokyonight.nvim",
   "nvim-lua/plenary.nvim",
   "nvim-telescope/telescope.nvim",
-  "OXY2DEV/markview.nvim",
 }
