@@ -116,4 +116,5 @@ require("pckr").add{
   "folke/tokyonight.nvim",
   "nvim-lua/plenary.nvim",
   "nvim-telescope/telescope.nvim",
+  "junegunn/vim-easy-align",
 }
